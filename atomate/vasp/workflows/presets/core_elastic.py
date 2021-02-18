@@ -84,6 +84,9 @@ def wf_elastic_constant(
         ],
     )
 
+    ##
+    # NOTE set ISYM=0 if symmetry is broken for large deformations
+    ##
     # vasp input set for static calculation
     vis_static = MPStaticSet(
         structure,
